@@ -20,16 +20,16 @@ def empty(a, b, c, d):
     return working
 
 
-def toggle(a, b, c, d):
+def toggle(a, b, c, d, nestedlist):
     for i in range(a, b):
         for j in range(c, d):
-            if (working[i][j] == 1):
-                working[i][j] == 0
-            elif (working[i][j] == 0):
-                working[i][j] == 1
+            if (nestedlist[i][j] == 1):
+                nestedlist[i][j] == 0
+            elif (nestedlist[i][j] == 0):
+                nestedlist[i][j] == 1
             else:
                 pass
-    return working
+    return nestedlist
 
 
 def counting():
