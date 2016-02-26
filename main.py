@@ -2,9 +2,6 @@ from src import create
 from src import occupy
 from src import count
 
-
-
-
 seats = create.new_2d(5, 5)
 print(seats)
 
