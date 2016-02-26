@@ -2,7 +2,7 @@
 
 from .context import sample
 
-import unittest
+import nosetest
 
 
 class BasicTestSuite(unittest.TestCase):
