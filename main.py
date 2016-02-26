@@ -6,7 +6,6 @@ from src import count
 # The count function is used directly after to test to see if all elements are there
 seats = create.new_2d(5, 5)
 counted_create = count.count_array(0, 5, 0, 5, seats)
-print(seats)
 
 # This is alternating the array to add the seats that become occupied
 # The count function is used directly after to test that the change occured
