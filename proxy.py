@@ -2,8 +2,9 @@ from .context import sample
 
 import unittest
 
-working = [[0 for x in range(5)] for x in range(5)]
-
+def create(a, b):
+    working = [[0 for x in range(a)] for x in range(b)]
+    return working
 
 def occupy(a, b, c, d):
     for i in range(0, 5):
