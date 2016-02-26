@@ -4,6 +4,8 @@ from src import count
 
 seats = create.new_2d(5, 5)
 print(seats)
+counted_create = count.count_array(0, 5, 0, 5, seats)
+
 
 occupy_seats = occupy.occupy_seats(2, 3, 2, 3, seats)
 print(occupy_seats)
