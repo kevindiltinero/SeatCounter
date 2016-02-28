@@ -23,4 +23,4 @@ def main(x, y, file):
 #main(1000, 1000, 'inputfile.txt')
 
 check_commands = thefile.get_cmmds('inputfile.txt')
-
+print(check_commands[5])
