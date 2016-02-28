@@ -8,7 +8,7 @@ from src import toggle
 
 # This is creating the 2d array to represent the seating arrangement
 # The count function is used directly after to test to see if all elements are there
-seats = create.new_2d(5, 5)
+seats = create.new_2d(100, 100)
 counted_create = count.count_array(0, 5, 0, 5, seats)
 print(seats)
 
@@ -30,3 +30,4 @@ emptied_seats = empty.empty_it(0, 5, 0, 5, occupied_seats)
 counted_emptied = count.count_array(0, 5, 0, 5, emptied_seats)
 print(emptied_seats)
 
+co
