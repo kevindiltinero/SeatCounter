@@ -2,6 +2,9 @@ from src import create
 from src import count
 from src import thefile
 from src import execute
+from src import occupy
+from src import toggle
+
 
 def main(x, y, file):
     #Create it
@@ -24,3 +27,9 @@ def main(x, y, file):
 
 check_commands = thefile.get_cmmds('inputfile.txt')
 print(check_commands[5])
+
+seats = create.new_2d(3, 3)
+newseats = occupy.occupy_seats(1, 1, 2, 2, seats)
+print(newseats)
+final_seats = toggle.toggle_it(0, 0, 2, 2, newseats)
+print(final_seats)
