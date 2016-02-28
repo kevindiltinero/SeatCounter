@@ -1,0 +1,2 @@
+occupy 1, 0 through 1, 2
+toggle 0, 0 through 2, 2
