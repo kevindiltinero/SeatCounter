@@ -21,3 +21,6 @@ def main(x, y, file):
     print(counted_after)
 
 main(1000, 1000, 'inputfile.txt')
+
+commands = thefile.get_cmmds(file)
+
