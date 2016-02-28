@@ -1,5 +1,5 @@
 import main
 
-def test_sizeafteroccupy():
-    count = main.result
-    assert count == 400410
+def test_execute():
+    count = main.results
+    assert count == 599590
