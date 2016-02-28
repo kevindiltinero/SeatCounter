@@ -20,7 +20,7 @@ def main(x, y, file):
     counted_after = count.count_array(x, y, seats)
     print(counted_after)
 
-main(1000, 1000, 'inputfile.txt')
+#main(1000, 1000, 'inputfile.txt')
 
-commands = thefile.get_cmmds(file)
+check_commands = thefile.get_cmmds('inputfile.txt')
 

@@ -1,5 +1,5 @@
 import main
 
 def test_decode_file():
-    commands = main.commands
-    assert len(commands) == 300
+    temporary = main.check_commands
+    assert len(temporary) == 300
