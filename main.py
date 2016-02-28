@@ -1,33 +1,20 @@
-from src import create
-from src import occupy
-from src import count
-from src import empty
-from src import toggle
-
-
-
 # This is creating the 2d array to represent the seating arrangement
 # The count function is used directly after to test to see if all elements are there
-seats = create.new_2d(100, 100)
-counted_create = count.count_array(0, 5, 0, 5, seats)
-print(seats)
+seats = create.new_2d(1000, 1000)
+counted_create = count.count_array(0, 1000, 0, 1000, seats)
+print(counted_create)
 
-# This is alternating the array to add the seats that become occupied
-# The count function is used directly after to test that the change occured
-occupied_seats = occupy.occupy_seats(0, 3, 0, 3, seats)
-counted_occupy = count.count_array(0, 5, 0, 5, seats)
-print(occupied_seats)
+# Trying out the exeution
+commands = thefile.get_cmmds('inputfile.txt')
+seats = execute_cmmds(seats, commands[6])
+#print(seats)
+counted_after = count.count_array(0, 1000, 0, 1000, seats)
 
-# This is alternating the array to add the seats that become occupied
-# The count function is used directly after to test that the change occured
-toggled_seats = toggle.toggle_it(0, 5, 0, 5, seats)
-counted_toggle = count.count_array(0, 5, 0, 5, seats)
-print(toggled_seats)
+counted_after = count.count_array(0, 1000, 0, 1000, seats)
+#print(counted_after)
 
-# This is alternating the array to add the seats that become occupied
-# The count function is used directly after to test that the change occured
-emptied_seats = empty.empty_it(0, 5, 0, 5, occupied_seats)
-counted_emptied = count.count_array(0, 5, 0, 5, emptied_seats)
-print(emptied_seats)
+#print(seats)
+counted_after = count.count_array(0, 1000, 0, 1000, seats)
+#print(counted_after)
 
-co
+
