@@ -26,3 +26,4 @@ def main(x, y, file):
 results = main(1000, 1000, 'inputfile.txt')
 
 print("Cool")
+print("Other")
