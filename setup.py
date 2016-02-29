@@ -10,14 +10,14 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
+    name='seatcounter',
     version='0.0.1',
-    description='Sample package for Python-Guide.org',
+    description='Simple program to track empty seats in a seating arrangement based on input from a file',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    author='Kevin Fitzpatrick',
+    author_email='mastery414@gmail.com,
+    url='https://github.com/kevindiltinero/seass3.git',
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
+    packages = find_packages(exclude=('tests', 'docs'))
 )
 
