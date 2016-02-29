@@ -24,3 +24,5 @@ def main(x, y, file):
     return counter_occupied
 
 results = main(1000, 1000, 'inputfile.txt')
+
+print("\nThe final amount of chairs that are occupied are: ", results)
