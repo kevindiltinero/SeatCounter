@@ -1,6 +1,6 @@
-import main
+from tests import tests
 
 def test_sizeafteroccupy():
-    count = main.counted_occupy
+    count = tests.counted_occupy
     assert count == 5
 
