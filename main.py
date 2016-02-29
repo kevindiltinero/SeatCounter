@@ -4,6 +4,7 @@ from src import thefile
 from src import execute
 from src import occupy
 from src import toggle
+from src import empty
 
 
 def main(x, y, file):
@@ -33,25 +34,25 @@ counted_create = count.count_array(3, 3, seats)
 seats = create.new_2d(5, 5)
 counted_create_again = count.count_array(5, 5, seats)
 
+#TEST FOR OCCUPY
 # This is alternating the array to add the seats that become occupied
 # The count function is used directly after to test that the change occured
+seats = create.new_2d(3, 3)
 occupied_seats = occupy.occupy_seats(0, 0, 1, 1, seats)
 counted_occupy = count.count_array(3, 3, occupied_seats)
-print(occupied_seats)
-print("\n", counted_occupy)
 
 # This is alternating the array to add the seats that become occupied
 # The count function is used directly after to test that the change occured
 toggled_seats = toggle.toggle_it(0, 0, 2, 2, occupied_seats)
 counted_toggle = count.count_array(3, 3, toggled_seats)
 print(toggled_seats)
-print("\n", counted_toggle)
+print(counted_toggle)
 
 # This is alternating the array to add the seats that become occupied
 # The count function is used directly after to test that the change occured
-#emptied_seats = empty.empty_it(0, 5, 0, 5, occupied_seats)
-#counted_emptied = count.count_array(0, 5, 0, 5, emptied_seats)
-#print(emptied_seats)
+emptied_seats = empty.empty_it(0, 0, 2, 2, toggled_seats)
+counted_emptied = count.count_array(3, 3, emptied_seats)
+print(emptied_seats)
 
 
 #check_commands = thefile.get_cmmds('inputfile.txt')
