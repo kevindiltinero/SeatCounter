@@ -27,8 +27,11 @@ def main(x, y, file):
 results = main(1000, 1000, 'inputfile.txt')
 print(results)
 
+#THE TEST FOR THE CREATE FUNCTION
 seats = create.new_2d(3, 3)
-print("\n", seats)
+counted_create = count.count_array(3, 3, seats)
+seats = create.new_2d(5, 5)
+counted_create_again = count.count_array(5, 5, seats)
 
 # This is alternating the array to add the seats that become occupied
 # The count function is used directly after to test that the change occured

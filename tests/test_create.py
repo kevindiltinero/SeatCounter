@@ -1,6 +1,8 @@
 import main
 
-def test_array_size():
+def test_count_after_create():
     count = main.counted_create
-    assert count == 25
+    next_count = main.counted_create_again
+    assert count == 9
+    assert next_count == 25
 
